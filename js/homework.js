@@ -36,13 +36,21 @@ let numbers1 = [10, 12, -9, 3, -1, 0, 15]
 let sum = 0
 console.log(numbers1)
 for (num in numbers1){
-    if (num >= 0){
-        console.log(num + sum)
-    }    
+    if (numbers1[num] >= 0){
+        sum += numbers1[num]
+    }
 };
+console.log(sum) 
 
 
 let numbers2 = [3, 5, 7, 9, -10, 2, -22, -1] 
-
+let sums = 0
+console.log(numbers2)
+for (nums in numbers2){
+    if (numbers2[nums] >= 0){
+        sums += numbers2[nums]
+    }
+};
+console.log(sums) 
 
 
