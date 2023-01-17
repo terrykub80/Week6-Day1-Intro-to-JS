@@ -381,6 +381,105 @@ conlog('-------');
 
 
 
+//  JS Loops
+// for, for....in, for....of, while, do while
+
+// Standard for loop
+// Syntax: for (counter; expression/condition; increment/decrement for counter){
+    // code to execust each loop }
+
+conlog("Loop has started");
+
+for (let i = 0; i <= 20; i++){
+    conlog(i);
+};
+
+conlog("Loop has ended");
+conlog('-------');
+
+let colors = ['orange', 'green', 'pink', 'yellow', 'black']
+for (let i=0; i < colors.length; i++){
+    conlog(i, colors[i])
+};
+conlog('-------');
+
+
+// for....in - used to loop over properties of an object
+
+let chiTeams = {
+    mlb: "Cubs", 
+    nba: 'Bulls',
+    nfl: 'Bears',
+    nhl: 'Blackhawks'
+};
+
+// Syntax - for (let variableName in object){ code to execute for each property }
+
+for (let team in chiTeams){
+    conlog(team);
+    conlog(chiTeams[team]);
+    conlog('-------');
+}
+
+conlog('-------');
+
+
+let planets = ['Mercury', 'Mars', 'Earth', 'Saturn', 'Uranus', 'Jupiter'];
+
+for (let p in planets){
+    conlog(p)
+};
+conlog('-------');
+
+// for....of - used to loop over the elements in an iterable (Array, String, etc.)
+for (let p of planets){
+    conlog(p);
+};
+conlog('-------');
+
+let someString = 'Hello World'
+
+for (let letter of someString){
+    conlog(letter)
+};
+
+// While Loop - loop while a condition is true
+// Syntax: while (condition){ code to execute while condition is true}
+
+conlog("WHILE LOOP");
+let startingNumber = 0;
+
+conlog("Before:", startingNumber);
+
+while (startingNumber < 500){
+    conlog(startingNumber);
+    startingNumber += Math.floor(Math.random() *100);
+    
+};
+conlog("After:", startingNumber);
+
+conlog('-------');
+
+// Do While Loop - DO the first part AT LEAST ONCE
+//   if the condition is still true, continue the while loop
+
+// Syntax do { code to execute } while (condition)
+
+let x;
+
+conlog('DO WHILE');
+
+do {
+    x = Math.floor(Math.random() * 100)
+    conlog(x)
+} while (x < 50);
+
+conlog("DO WHILE OVER - x is", x)
+
+
+
+
+
 
 
 
