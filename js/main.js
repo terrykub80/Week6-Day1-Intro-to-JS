@@ -270,7 +270,117 @@ conlog(addSquare);
 
 conlog('-------');
 
+console.clear();
+
+
+
+
+
+// JS Comparisons
+
+conlog(5 == 5);
+conlog ( 5 == 5.0);
+conlog( 5 == '5'); // Double equal doesn't worry about data type
+conlog(5 === '5'); // Triple equal sign means equals everything including data type
+
+conlog('-------');
+
+conlog( 1 == true);
+
+conlog('-------');
+
+conlog('10' > 9);
+
+conlog('100' > '9');
+conlog('-------');
+
+
+
+// When JS compares object, it looks for REFERENCE ONLY!!!
+
+let arr1 = [1, 2, 3, 4];
+let arr2 = [1, 2, 3, 4];
+
+conlog(arr1 == arr2);
+conlog(arr1 === arr2);
+conlog('-------');
+
+let animals = ['penguin', 'wolf', 'kangaroo'];
+let newAnimals = animals;
+
+conlog(animals === newAnimals)
+conlog('-------');
+
+
+
+//  Greater Than (>), Greater Than or Equal (>=), Less Than (<), Less Than or Equal (<=)
+//  Equal allow type conversion (==), Equal no type conversion (===), 
+//  Not Equal yes conversion (!=), Not Eqaul no conversion (!==)
+
+conlog(5 != '5')
+conlog(5 !== '5')
+conlog('-------');
+
 console.clear()
+
+
+//  Control Flow
+
+// If Condition
+
+// Syntax: if (condition expression){code to execute if true}
+
+
+
+conlog('BEGIN')
+let randomDigit = 14
+if (randomDigit > 20){
+    conlog("The condition was true");
+    conlog("still in {}");
+};
+conlog("Hey what is going on");
+conlog('END');
+conlog('-------');
+
+// If, Else If, Else
+conlog("BEGIN");
+let randomInt = 75;
+if (randomInt % 100 === 0){
+    conlog("The number is divisible by 100")
+} else if (randomInt % 10 === 0){
+    conlog("The number is divisible by 10")
+} else {
+    conlog("The number is not divisible by 100 or 10")
+};
+conlog('-------');
+
+// And Or
+// && - and
+// || - or
+
+// T && T = T
+// T && F = F
+// F && T = F
+// F && F = F
+//  T || T = T
+// T || F = T
+// F || T = T
+// F || F = F
+
+let personAge = 77
+
+if (personAge > 18 && personAge < 40){
+    conlog('Young Adult')
+};
+
+if (personAge < 18 || personAge > 65){
+    conlog("You get a discount!")
+};
+
+conlog('-------');
+
+
+
 
 
 
