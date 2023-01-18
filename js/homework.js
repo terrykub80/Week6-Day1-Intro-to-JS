@@ -35,7 +35,7 @@ Note: if there is nothing to sum, the sum is default to 0.
 let numbers1 = [10, 12, -9, 3, -1, 0, 15] 
 let sum = 0
 console.log(numbers1)
-for (num in numbers1){
+for (let num in numbers1){
     if (numbers1[num] >= 0){
         sum += numbers1[num]
     }
@@ -43,10 +43,12 @@ for (num in numbers1){
 console.log(sum) 
 
 
+
+
 let numbers2 = [3, 5, 7, 9, -10, 2, -22, -1] 
 let sums = 0
 console.log(numbers2)
-for (nums in numbers2){
+for (let nums in numbers2){
     if (numbers2[nums] >= 0){
         sums += numbers2[nums]
     }
